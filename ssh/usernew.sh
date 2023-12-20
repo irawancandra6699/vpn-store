@@ -20,7 +20,7 @@ else
 domeni=`cat /etc/v2ray/domain`
 fi
 domen=`cat /etc/xray/domain`
-sldomain=`cat /etc/xray/dns`
+sldomain=`cat /root/nsdomain`
 slkey=`cat /etc/slowdns/server.pub`
 portsshws=`cat ~/log-install.txt | grep -w "SSH Websocket" | cut -d: -f2 | awk '{print $1}'`
 wsssl=`cat /root/log-install.txt | grep -w "SSH SSL Websocket" | cut -d: -f2 | awk '{print $1}'`
@@ -71,6 +71,7 @@ echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
 echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "SSHUDP      : $domen:1-65535@$Login:$Pass" | tee -a /etc/log-create-user.log
+echo -e "SSH-WS      : $domen:80@$Login:$Pass" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "PORT SLWDNS : 443,80,53" | tee -a /etc/log-create-user.log
 echo -e "NS DOMAIN   : $sldomain" | tee -a /etc/log-create-user.log
