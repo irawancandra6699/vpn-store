@@ -274,10 +274,10 @@ echo -e "${BIPurple} └──────────────────�
 echo -e "     ${BIPurple} SSH ${NC}: $ressh"" ${BIPurple} NGINX ${NC}: $resngx"" ${BIPurple}  XRAY ${NC}: $resv2r"" ${BIPurple} TROJAN ${NC}: $resv2r"
 echo -e "   ${BIPurple}     STUNNEL ${NC}: $resst" "${BIPurple} DROPBEAR ${NC}: $resdbr" "${BIPurple} SSH-WS ${NC}: $ressshws"
 echo -e "${BIPurple} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIPurple} │  ${BIPurple}[${BIWhite}01${BIPurple}] SSH     ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}"  "${BIPurple}  [${BIWhite}08${BIPurple}] ADD-HOST        ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}" "${BIPurple} │${NC}"
+echo -e "${BIPurple} │  ${BIPurple}[${BIWhite}01${BIPurple}] SSH     ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}"  "${BIPurple}  [${BIWhite}08${BIPurple}] DOMAIN          ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}" "${BIPurple} │${NC}"
 echo -e "${BIPurple} │  ${BIPurple}[${BIWhite}02${BIPurple}] VMESS   ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}"  "${BIPurple}  [${BIWhite}09${BIPurple}] RUNNING         ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}" "${BIPurple} │${NC}"
 echo -e "${BIPurple} │  ${BIPurple}[${BIWhite}03${BIPurple}] VLESS   ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}"  "${BIPurple}  [${BIWhite}10${BIPurple}] INSTALL UDP     ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}" "${BIPurple} │${NC}"
-echo -e "${BIPurple} │  ${BIPurple}[${BIWhite}04${BIPurple}] TROJAN  ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}"  "${BIPurple}  [${BIWhite}11${BIPurple}] INSTALL BOT     ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}" "${BIPurple} │${NC}"
+echo -e "${BIPurple} │  ${BIPurple}[${BIWhite}04${BIPurple}] TROJAN  ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}"  "${BIPurple}  [${BIWhite}11${BIPurple}] INSTALL BOT{OFF}${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}" "${BIPurple} │${NC}"
 echo -e "${BIPurple} │  ${BIPurple}[${BIWhite}05${BIPurple}] SETING  ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}"  "${BIPurple}  [${BIWhite}12${BIPurple}] LOCKED SSH      ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}" "${BIPurple} │${NC}"
 echo -e "${BIPurple} │  ${BIPurple}[${BIWhite}06${BIPurple}] TRIALL  ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}"  "${BIPurple}  [${BIWhite}13${BIPurple}] UNLOCK SSH      ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}" "${BIPurple} │${NC}"
 echo -e "${BIPurple} │  ${BIPurple}[${BIWhite}07${BIPurple}] BACKUP  ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}"  "${BIPurple}  [${BIWhite}14${BIPurple}] UPDATE SCRIPT   ${BIPurple}[${BIYellow}Menu${BIPurple}]${NC}" "${BIPurple} │${NC}"
@@ -310,7 +310,7 @@ case $opt in
 5) clear ; menu-set ;;
 6) clear ; menu-trial ;;
 7) clear ; menu-backup ;;
-8) clear ; add-host ;;
+8) clear ; menu-domain ;;
 9) clear ; running ;;
 10) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
 11) clear ; wget https://raw.githubusercontent.com/irawancandra6699/vpn-store/main/kyt.sh && chmod +x kyt.sh && ./kyt.sh ;;
