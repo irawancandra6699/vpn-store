@@ -16,13 +16,13 @@ rm -rf bot
 apt update && apt upgrade
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://raw.githubusercontent.com/arivpnstores/irawancandra6699/vpn-store/main/bot/bot.zip
+wget https://vvip.kvm-xcode.biz.id/bot/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 clear
-wget https://raw.githubusercontent.com/arivpnstores/irawancandra6699/vpn-store/main/bot/kyt.zip
+wget https://vvip.kvm-xcode.biz.id/bot/kyt.zip
 unzip kyt.zip
 pip3 install -r kyt/requirements.txt
 clear
