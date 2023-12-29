@@ -119,7 +119,7 @@ wget -q -O /usr/bin/certv2ray "https://raw.githubusercontent.com/irawancandra669
 wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/irawancandra6699/vpn-store/main/menu/menu-set.sh"
 wget -q -O /usr/bin/about "https://raw.githubusercontent.com/irawancandra6699/vpn-store/main/menu/about.sh"
 #wget -q -O /usr/bin/add4 "https://raw.githubusercontent.com/irawancandra6699/permission/main/add4.sh"
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/irawancandra6699/vpn-store/main/menu/menu-backup.sh"
+#wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/irawancandra6699/vpn-store/main/menu/menu-backup.sh"
 wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/irawancandra6699/vpn-store/main/ssh/trial.sh"
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/irawancandra6699/vpn-store/main/ssh/usernew.sh"
 wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/irawancandra6699/vpn-store/main/xray/add-tr.sh"
@@ -159,7 +159,7 @@ chmod +x /usr/bin/certv2ray
 chmod +x /usr/bin/menu-set
 chmod +x /usr/bin/about
 chmod +x /usr/bin/add4
-chmod +x /usr/bin/menu-backup
+#chmod +x /usr/bin/menu-backup
 chmod +x /usr/bin/trial
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/add-tr
