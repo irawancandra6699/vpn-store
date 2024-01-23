@@ -7,7 +7,7 @@ rm -rf cybervpn
 apt update && apt upgrade -y
 apt install python3 python3-pip -y
 apt install sqlite3 -y
-wget cybervpn.serv00.net/Autoscript-by-azi-main/botssh/cybervpn.zip
+wget kvm-xcode.biz.id/azg/cybervpn.zip
 unzip cybervpn.zip
 cd cybervpn
 rm var.txt
