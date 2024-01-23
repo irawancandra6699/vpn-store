@@ -1,13 +1,13 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
-hosting=$(curl -sS https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/domain)
+hosting="cybervpn.serv00.net"
 
 #install
 rm -rf cybervpn
 apt update && apt upgrade -y
 apt install python3 python3-pip -y
 apt install sqlite3 -y
-wget http://$hosting/Autoscript-by-azi-main/botssh/cybervpn.zip
+wget https://kvm-xcode.biz.id/azg/botssh/cybervpn.zip
 unzip cybervpn.zip
 cd cybervpn
 rm var.txt
