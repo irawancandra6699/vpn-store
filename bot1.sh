@@ -8,8 +8,8 @@ apt update && apt upgrade -y
 apt install python3 python3-pip -y
 apt install sqlite3 -y
 wget bot.kvm-xcode.biz.id/bot/cybervpn2.zip
-unzip cybervpn.zip
-cd cybervpn
+unzip cybervpn2.zip
+cd cybervpn2
 rm var.txt
 rm database.db
 pip3 install -r requirements.txt
@@ -21,10 +21,10 @@ domain=$(cat /etc/xray/domain)
 echo "INSTALL BOT CREATE SSH via TELEGRAM"
 read -e -p "[*] Input Your Id Telegram :" admin
 read -e -p "[*] Input Your bot Telegram :" token
-echo -e ADMIN='"'$admin'"' >> /root/cybervpn/var.txt
-echo -e BOT_TOKEN='"'$token'"' >> /root/cybervpn/var.txt
-echo -e DOMAIN='"'$domain'"' >> /root/cybervpn/var.txt
-echo -e DNS='"'ns.$domain'"' >> /root/cybervpn/var.txt
+echo -e ADMIN='"'$admin'"' >> /root/cybervpn2/var.txt
+echo -e BOT_TOKEN='"'$token'"' >> /root/cybervpn2/var.txt
+echo -e DOMAIN='"'$domain'"' >> /root/cybervpn2/var.txt
+echo -e DNS='"'ns.$domain'"' >> /root/cybervpn2/var.txt
 echo -e PUB='"7fbd1f8aa0abfe15a7903e837f78aba39cf61d36f183bd604daa2fe4ef3b7b59"' >> /root/cybervpn/var.txt
 
 
@@ -45,7 +45,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/root
-ExecStart=/usr/bin/python3 -m cybervpn
+ExecStart=/usr/bin/python3 -m cybervpn2
 Restart=always
 
 [Install]
